@@ -795,7 +795,8 @@ footer small {
   }
 }
 
-/* TÍTULO ANA & JOSHUE CENTRADO EN VERTICAL */
+
+/* TÍTULO ANA & JOSHUE */
 
 .hero-title {
   display: flex;
@@ -804,20 +805,54 @@ footer small {
   justify-content: center;
   text-align: center;
 
-  margin: 15px 0;
+  margin: 20px 0;
   gap: 0;
 
-  line-height: 1;
+  line-height: 1.05;
+  font-family: 'Playfair Display', Georgia, serif;
 }
 
+/* ANA Y JOSHUE: ROJO BURDEOS */
 .hero-title .name {
   display: block;
-  font-size: clamp(3rem, 10vw, 6rem);
+
+  color: #800020;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 500;
+  font-style: normal;
+
+  font-size: clamp(3.5rem, 11vw, 6.5rem);
+  letter-spacing: -0.035em;
+  line-height: 1.1;
 }
 
+/* SÍMBOLO &: VERDE OLIVA */
 .hero-title .ampersand {
   display: block;
-  font-size: clamp(2rem, 6vw, 3.5rem);
+
+  color: #68734A;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 400;
+  font-style: italic;
+
+  font-size: clamp(2.5rem, 7vw, 4rem);
   line-height: 1;
-  margin: 5px 0;
+  margin: 4px 0;
+}
+
+/* AJUSTES PARA MÓVILES */
+@media (max-width: 768px) {
+  .hero-title {
+    margin: 15px 0;
+  }
+
+  .hero-title .name {
+    font-size: clamp(3.2rem, 14vw, 5rem);
+    letter-spacing: -0.04em;
+  }
+
+  .hero-title .ampersand {
+    font-size: 2.8rem;
+    margin: 2px 0;
+  }
 }
