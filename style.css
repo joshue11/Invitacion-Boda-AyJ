@@ -796,63 +796,72 @@ footer small {
 }
 
 
-/* TÍTULO ANA & JOSHUE */
+/* =========================================
+   TÍTULO ANA & JOSHUE
+   NOMBRES BURDEOS + & VERDE OLIVA
+   ========================================= */
 
-.hero-title {
+/* Neutraliza el color y la tipografía heredados del h1 general */
+.hero h1.hero-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-
+  width: 100%;
   margin: 20px 0;
+  padding: 0;
   gap: 0;
-
-  line-height: 1.05;
-  font-family: 'Playfair Display', Georgia, serif;
-}
-
-/* ANA Y JOSHUE: ROJO BURDEOS */
-.hero-title .name {
-  display: block;
-
-  color: #800020;
-  font-family: 'Playfair Display', Georgia, serif;
-  font-weight: 400;
-  font-style: normal;
-
-  font-size: clamp(3.5rem, 11vw, 6.5rem);
-  letter-spacing: -0.035em;
-  line-height: 1.1;
-}
-
-/* SÍMBOLO &: VERDE OLIVA */
-.hero-title .ampersand {
-  display: block;
-
-  color: #68734A;
-  font-family: 'Playfair Display', Georgia, serif;
-  font-weight: 400;
-  font-style: italic;
-
-  font-size: clamp(2.5rem, 7vw, 4rem);
+  text-align: center;
   line-height: 1;
-  margin: 4px 0;
+  color: var(--burgundy) !important;
+  font-family: "Libre Baskerville", Georgia, serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
 }
 
-/* AJUSTES PARA MÓVILES */
+/* ANA y JOSHUE: burdeos y J con descendente bien definido */
+.hero h1.hero-title .name {
+  display: block;
+  color: var(--burgundy) !important;
+  font-family: "Libre Baskerville", Georgia, serif !important;
+  font-size: clamp(3.3rem, 10vw, 6.2rem);
+  font-weight: 400 !important;
+  font-style: normal !important;
+  letter-spacing: -0.045em;
+  line-height: 1.16;
+}
+
+/* &: verde oliva */
+.hero h1.hero-title .ampersand {
+  display: block;
+  margin: 3px 0 5px;
+  color: var(--olive) !important;
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-size: clamp(2.4rem, 6vw, 3.5rem);
+  font-weight: 400 !important;
+  font-style: italic !important;
+  line-height: 1;
+}
+
+/* Ajustes para móviles: fuerza los mismos colores y tipografías */
 @media (max-width: 768px) {
-  .hero-title {
+  .hero h1.hero-title {
     margin: 15px 0;
+    width: 100%;
   }
 
-  .hero-title .name {
-    font-size: clamp(3.2rem, 14vw, 5rem);
-    letter-spacing: -0.04em;
+  .hero h1.hero-title .name {
+    color: var(--burgundy) !important;
+    font-family: "Libre Baskerville", Georgia, serif !important;
+    font-size: clamp(3rem, 13vw, 4.8rem);
+    font-weight: 400 !important;
+    line-height: 1.18;
+    letter-spacing: -0.045em;
   }
 
-  .hero-title .ampersand {
-    font-size: 2.8rem;
-    margin: 2px 0;
+  .hero h1.hero-title .ampersand {
+    color: var(--olive) !important;
+    font-size: 2.7rem;
+    margin: 2px 0 4px;
   }
 }
