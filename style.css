@@ -131,10 +131,10 @@ section {
 }
 
 .hero h1 {
-  margin: 15px 0;
-  font-size: clamp(3.5rem, 10vw, 7rem);
+  margin: 12px 0;
+  font-size: clamp(3.8rem, 11vw, 7rem);
   letter-spacing: -0.04em;
-  line-height: 1.1;
+}
 
    @media (max-width: 768px) {
   .hero h1 {
