@@ -864,12 +864,13 @@ footer small {
     font-size: 2.7rem;
     margin: 2px 0 4px;
   }
-}
+
 #google-form {
-  width: 100%;
-  height: 250px !important;
-  max-height: 250px;
-  display: block;
-  border: none;
-  overflow: hidden;
+  display: block !important;
+  width: 100% !important;
+  height: 400px !important;
+  min-height: 0 !important;
+  max-height: 400px !important;
+  border: none !important;
+  margin-bottom: 0 !important;
 }
