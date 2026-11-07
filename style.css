@@ -868,9 +868,9 @@ footer small {
 #google-form {
   display: block !important;
   width: 100% !important;
-  height: 400px !important;
+  height: 600px !important;
   min-height: 0 !important;
-  max-height: 400px !important;
+  max-height: 600px !important;
   border: none !important;
   margin-bottom: 0 !important;
 }
