@@ -875,3 +875,94 @@ footer small {
   border: none !important;
   margin-bottom: 0 !important;
 }
+
+/* =========================================
+   MÚSICA — SPOTIFY
+   ========================================= */
+
+.music {
+  padding: 85px 22px;
+  background: var(--cream);
+  text-align: center;
+}
+
+.music-intro {
+  max-width: 650px;
+  margin: 0 auto 20px;
+}
+
+.music-decoration {
+  margin: 20px 0;
+  color: var(--olive);
+  font-size: 1.8rem;
+  letter-spacing: 0.4em;
+}
+
+.spotify-card {
+  width: min(100%, 650px);
+  margin: 30px auto 0;
+  padding: 35px 25px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--cream-light);
+  box-shadow: var(--shadow);
+}
+
+.spotify-icon {
+  color: var(--olive);
+  font-size: 2.5rem;
+}
+
+.spotify-card h3 {
+  margin: 10px 0;
+  font-size: 1.8rem;
+}
+
+.spotify-card > p {
+  max-width: 500px;
+  margin: 0 auto 22px;
+}
+
+.spotify-player {
+  width: 100%;
+  margin: 25px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--white);
+}
+
+.spotify-player iframe {
+  display: block;
+  width: 100%;
+  min-height: 352px;
+  border: 0;
+}
+
+.spotify-button {
+  margin-top: 12px;
+}
+
+.music-footer {
+  margin-top: 25px !important;
+  color: var(--burgundy);
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+
+/* MÚSICA EN MÓVILES */
+
+@media (max-width: 760px) {
+
+  .music {
+    padding: 65px 17px;
+  }
+
+  .spotify-card {
+    padding: 25px 15px;
+  }
+
+  .spotify-player iframe {
+    min-height: 352px;
+  }
+
+}
