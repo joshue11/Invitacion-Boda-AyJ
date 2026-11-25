@@ -966,3 +966,104 @@ footer small {
   }
 
 }
+
+/* =========================================
+   AJUSTE DEFINITIVO MÚSICA EN ORDENADOR
+   ========================================= */
+
+.music {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 85px 22px;
+  text-align: center;
+  background: var(--cream);
+}
+
+.music > .eyebrow,
+.music > h2,
+.music > .music-intro,
+.music > .music-decoration {
+  width: 100%;
+  text-align: center;
+}
+
+.music > .eyebrow {
+  margin-bottom: 10px;
+}
+
+.music > h2 {
+  margin: 12px auto 24px;
+}
+
+.music-intro {
+  max-width: 650px;
+  margin: 0 auto 20px;
+}
+
+.music-decoration {
+  text-align: center;
+}
+
+.spotify-card {
+  display: flex;
+  width: min(100%, 650px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto 0;
+  padding: 35px 25px;
+  text-align: center;
+}
+
+.spotify-card h3,
+.spotify-card > p {
+  width: 100%;
+  text-align: center;
+}
+
+.spotify-player {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 25px auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.spotify-player iframe {
+  display: block;
+  width: 100%;
+  height: 352px;
+  border: none;
+}
+
+.spotify-button {
+  align-self: center;
+  margin: 12px auto;
+}
+
+.music-footer {
+  text-align: center;
+}
+
+/* AJUSTES PARA MÓVILES */
+
+@media (max-width: 760px) {
+
+  .music {
+    padding: 65px 17px;
+  }
+
+  .spotify-card {
+    width: 100%;
+    padding: 25px 15px;
+  }
+
+  .spotify-player {
+    width: 100%;
+  }
+
+}
